@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+
+    color:white;
+    line-height:1.8;
+}
+
+/* Hero */
+
+.hero{
+    background:url("images/banner.jpg")
+    center/cover;
+
+    height:500px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    width:80%;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* Navigation */
+
+nav{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Section */
+
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    font-size:40px;
+    margin-bottom:30px;
+    color:#7dd3fc;
+}
+
+/* 毛玻璃 */
+
+.glass{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
+    margin:40px auto;
+}
+
+/* Cards */
+
+.image-container{
+
+    display:flex;
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+.card{
+
+    width:300px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+}
+
+.card:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.03);
+}
+
+.card img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* Table */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+th, td{
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    padding:15px;
+
+    text-align:center;
+}
+
+th{
+
+    background:rgba(56,189,248,0.3);
+}
+
+/* Media */
+
+video,
+iframe{
+
+    width:100%;
+    max-width:800px;
+
+    border-radius:20px;
+
+    margin-top:20px;
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    margin-top:50px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-top:
+    1px solid rgba(255,255,255,0.2);
+}
