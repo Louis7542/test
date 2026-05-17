@@ -7,7 +7,157 @@
 
     <title>日本經典戰機與客機資料庫</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#0f172a;
+            color:white;
+            line-height:1.8;
+        }
+
+        .hero{
+            background:url("images/banner.jpg") center/cover;
+            height:500px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .overlay{
+            background:rgba(0,0,0,0.6);
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+        }
+
+        .hero h1{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            max-width:800px;
+        }
+
+        nav{
+            background:#111827;
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            padding:20px;
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        section{
+            padding:70px 10%;
+        }
+
+        section h2{
+            font-size:40px;
+            margin-bottom:30px;
+            color:#38bdf8;
+        }
+
+        .image-container{
+            display:flex;
+            gap:30px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .card{
+            background:#1e293b;
+            width:300px;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            background:#1e293b;
+        }
+
+        th, td{
+            border:1px solid #334155;
+            padding:15px;
+            text-align:center;
+        }
+
+        th{
+            background:#0ea5e9;
+        }
+
+        tr:hover{
+            background:#334155;
+        }
+
+        video{
+            border-radius:15px;
+            margin-top:20px;
+            width:100%;
+            max-width:700px;
+        }
+
+        iframe{
+            border-radius:15px;
+            margin-top:20px;
+            width:100%;
+            max-width:700px;
+            height:400px;
+        }
+
+        footer{
+            background:#111827;
+            text-align:center;
+            padding:30px;
+            margin-top:50px;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -29,16 +179,14 @@
     </header>
 
     <nav>
-
         <a href="#about">主題介紹</a>
         <a href="#gallery">圖片展示</a>
         <a href="#table">規格表</a>
         <a href="#video">原生影片</a>
         <a href="#youtube">YouTube</a>
-
     </nav>
 
-    <section id="about" class="glass">
+    <section id="about">
 
         <h2>主題介紹</h2>
 
@@ -64,8 +212,7 @@
 
         <div class="image-container">
 
-            <div class="card glass">
-
+            <div class="card">
                 <img src="images/f15j.jpg" alt="F15J">
 
                 <h3>F-15J</h3>
@@ -74,11 +221,9 @@
                     日本航空自衛隊主力戰鬥機，
                     擁有優秀空戰能力。
                 </p>
-
             </div>
 
-            <div class="card glass">
-
+            <div class="card">
                 <img src="images/mrj.jpg" alt="MRJ">
 
                 <h3>Mitsubishi MRJ</h3>
@@ -87,11 +232,9 @@
                     日本新世代支線客機，
                     強調低油耗與舒適性。
                 </p>
-
             </div>
 
-            <div class="card glass">
-
+            <div class="card">
                 <img src="images/ana.jpg" alt="ANA">
 
                 <h3>ANA Boeing 787</h3>
@@ -100,14 +243,13 @@
                     全日空長途航線主力客機，
                     廣泛應用於國際航班。
                 </p>
-
             </div>
 
         </div>
 
     </section>
 
-    <section id="table" class="glass">
+    <section id="table">
 
         <h2>飛機性能資料表</h2>
 
@@ -145,43 +287,40 @@
 
     </section>
 
-    <section id="video" class="glass">
+    <section id="video">
 
         <h2>原生 MP4 影片</h2>
 
         <video controls>
-
             <source src="videos/fighter.mp4" type="video/mp4">
-
             瀏覽器不支援影片播放。
-
         </video>
 
     </section>
 
-    <section id="youtube" class="glass">
+    <section id="youtube">
 
         <h2>YouTube 飛行影片</h2>
 
-        <div class="youtube-container">
-
-            <iframe width="1278" height="719" src="https://www.youtube.com/embed/rtVrdE14J2k" title="F-15EX EX16 First Flight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        </div>
-    
+        <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/Eng5Qe_h_8Y"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
 
     </section>
 
     <footer>
 
         <p>
-            高三電腦科期末專題
-                   </p>
+            高三電腦科期末專題｜
+            自建網站與 AI 協作爬蟲實戰
+        </p>
 
     </footer>
 
-    <script src="script.js"></script>
-
 </body>
-
 </html>
