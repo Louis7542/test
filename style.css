@@ -1,0 +1,447 @@
+/* =========================
+   Global Settings
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+
+    background-attachment:fixed;
+
+    color:white;
+
+    line-height:1.8;
+}
+
+/* =========================
+   Hero Banner
+========================= */
+
+.hero{
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("images/banner.jpg");
+
+    background-position:center;
+    background-size:cover;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+.overlay{
+
+    width:90%;
+    max-width:1000px;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    color:#7dd3fc;
+
+    text-shadow:
+    0 0 15px rgba(125,211,252,0.5);
+}
+
+.hero p{
+
+    font-size:22px;
+
+    color:#e2e8f0;
+}
+
+/* =========================
+   Navigation Bar
+========================= */
+
+nav{
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.15);
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    position:relative;
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-5px;
+
+    width:0%;
+
+    height:2px;
+
+    background:#38bdf8;
+
+    transition:0.3s;
+}
+
+nav a:hover{
+
+    color:#38bdf8;
+}
+
+nav a:hover::after{
+
+    width:100%;
+}
+
+/* =========================
+   Section
+========================= */
+
+section{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+section h2{
+
+    font-size:42px;
+
+    margin-bottom:30px;
+
+    color:#7dd3fc;
+
+    text-shadow:
+    0 0 10px rgba(125,211,252,0.4);
+}
+
+section p{
+
+    font-size:18px;
+
+    color:#e2e8f0;
+}
+
+/* =========================
+   Cards
+========================= */
+
+.image-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.card{
+
+    width:320px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    transition:0.4s;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.03);
+
+    box-shadow:
+    0 10px 40px rgba(56,189,248,0.35);
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+.card h3{
+
+    padding:15px;
+
+    font-size:28px;
+
+    color:#7dd3fc;
+}
+
+.card p{
+
+    padding:
+    0 15px 20px;
+}
+
+/* =========================
+   Table
+========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:20px;
+}
+
+th{
+
+    background:
+    rgba(56,189,248,0.25);
+
+    color:#7dd3fc;
+
+    font-size:20px;
+}
+
+th, td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border:
+    1px solid rgba(255,255,255,0.15);
+}
+
+tr{
+
+    transition:0.3s;
+}
+
+tr:hover{
+
+    background:
+    rgba(255,255,255,0.08);
+}
+
+/* =========================
+   Video
+========================= */
+
+video{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   YouTube Responsive
+========================= */
+
+.youtube-container{
+
+    width:100%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+.youtube-container iframe{
+
+    width:100%;
+
+    height:560px;
+
+    border:none;
+
+    display:block;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+
+    margin-top:60px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-top:
+    1px solid rgba(255,255,255,0.15);
+}
+
+footer p{
+
+    color:#cbd5e1;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media(max-width:900px){
+
+    .hero h1{
+
+        font-size:40px;
+    }
+
+    .hero p{
+
+        font-size:18px;
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        gap:20px;
+    }
+
+    section{
+
+        padding:40px 25px;
+    }
+
+    section h2{
+
+        font-size:32px;
+    }
+
+    .card{
+
+        width:100%;
+    }
+}
